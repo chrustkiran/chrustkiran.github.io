@@ -12,7 +12,7 @@ $p=mysqli_real_escape_string($con,(string)($_POST['password']));
 $e="INSERT INTO user (username,password) VALUES ('$u','$p')";
 $result = mysqli_query($con,$e);
 
-if($result and ($u[-1]=="p" or $u[-1]=="P" or $u[-1]=="s" or $u[-1]=="S" or $u[-1]=="A" or $u[-1]=="a" or $u[-1]=="T" or $u[-1]=="t"  ) ){
+if($result and (substr($u,-1)=="p" or substr($u,-1)=="P" or substr($u,-1)=="s" or substr($u,-1)=="S" or substr($u,-1)=="A" or substr($u,-1)=="a" or substr($u,-1)=="T" or substr($u,-1)=="t"  ) ){
   session_start();
   $_SESSION['userr'] = $u;
   $_SESSION['passs'] = $p;

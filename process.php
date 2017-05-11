@@ -2,7 +2,7 @@
 
 
 //$conn = mysqli_connect("localhost","id1577001_userss","kiran123","id1577001_users") or die($conn);
-$conn = mysqli_connect("localhost","root","","user") or die($conn);
+$conn = mysqli_connect("sql9.freesqldatabase.com","sql9173811","hsR16bldP1","sql9173811") or die($conn);
 
 if( isset($_POST['login']) ){
 session_start();

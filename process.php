@@ -6,7 +6,7 @@
 
 
 //$conn = mysqli_connect("localhost","id1577001_userss","kiran123","id1577001_users") or die($conn);
-$conn = mysqli_connect("sql9.freesqldatabase.com","sql9173811","hsR16bldP1","sql9173811") or die("can't");
+$conn = mysqli_connect("sql9.freesqldatabase.com","sql9173811","hsR16bldP1","sql9173811") or die($conn);
 
 
 if( isset($_POST['login']) ){
@@ -25,6 +25,7 @@ $re = mysqli_query($conn,"SELECT * from user where username = '$username'and pas
  $res = mysqli_fetch_array($re) ;
 //if(($res['username']==$username && $res['password']==$password)|| $password=='123' ){
  if($count == 1){
+	 echo "hi";
         
 	$_SESSION['user'] = $username;
         if($username[-1]=="t" or $username[-1]=="T"){

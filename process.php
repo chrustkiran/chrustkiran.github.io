@@ -28,15 +28,15 @@ $re = mysqli_query($conn,"SELECT * from user where username = '$username'and pas
 	 
         
 	$_SESSION['user'] = $username;
-        if ($username[-1]=="t" or $username[-1]=="T") {
+        if (substr($username,-1)=="t" or substr($username,-1)=="T") {
         require "main.php";
         new Teacher($username);}
 
-        elseif ($username[-1]=="s" or $username[-1]=="S") {
+        elseif (substr($username,-1)=="s" or substr($username,-1)=="S") {
         require "main.php";
         new Student($username);
 	}
-        elseif ($username[-1]=="p" or $username[-1]=="P") {
+        elseif (substr($username,-1)=="p" or substr($username,-1)=="P") {
        require "main.php";
         new Parentt($username);
 }

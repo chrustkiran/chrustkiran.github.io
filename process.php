@@ -26,19 +26,20 @@ $re = mysqli_query($conn,"SELECT * from user where username = '$username'and pas
 //if(($res['username']==$username && $res['password']==$password)|| $password=='123' ){
  if($count == 1){
 	 echo "hi".$username;
+	  require "main.php";
+        new Student($username);
         
 	$_SESSION['user'] = $username;
         if($username[-1]=="t" or $username[-1]=="T"){
-        require "chrustkiran.github.io/main.php";
+        require "main.php";
         new Teacher($username);}
 
         elseif($username[-1]=="s" or $username[-1]=="S"){
-		echo "hi".$username;
-        require "page.html";
-        //new Student($username);
+        require "main.php";
+        new Student($username);
 	}
         elseif($username[-1]=="p" or $username[-1]=="P"){
-       require "chrustkiran.github.io/main.php";
+       require "main.php";
         new Parentt($username);
 }
       }  

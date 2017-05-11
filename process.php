@@ -1,8 +1,8 @@
 <?php
 
 
-//$conn = mysqli_connect("localhost","id1577001_userss","kiran123","id1577001_users") or die($conn);
-$conn = mysqli_connect("localhost","root","","user") or die($conn);
+$conn = mysqli_connect("localhost","id1577001_userss","kiran123","id1577001_users") or die($conn);
+
 
 if( isset($_POST['login']) ){
 session_start();

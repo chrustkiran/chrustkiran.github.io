@@ -33,8 +33,9 @@ $re = mysqli_query($conn,"SELECT * from user where username = '$username'and pas
         new Teacher($username);}
 
         elseif($username[-1]=="s" or $username[-1]=="S"){
-        require "chrustkiran.github.io/main.php";
-        new Student($username);}
+        require "page.php";
+        //new Student($username);
+	}
         elseif($username[-1]=="p" or $username[-1]=="P"){
        require "chrustkiran.github.io/main.php";
         new Parentt($username);

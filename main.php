@@ -21,7 +21,7 @@ class Student {
 public $id;
  function __construct($id){
 $this->id = $id;
-echo "You are logged in as Teacher username is ".$id;
+
 $this->x();
 
 

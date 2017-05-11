@@ -3,7 +3,6 @@
 
 //$con = mysqli_connect("localhost","id1577001_userss","kiran123","id1577001_users") or die($con);
 
-=======
 //$con = mysqli_connect("localhost","id1577001_userss","kiran123","id1577001_users") or die($con);
 $con = mysqli_connect("sql9.freesqldatabase.com","sql9173811","hsR16bldP1","sql9173811") or die("cant");
 

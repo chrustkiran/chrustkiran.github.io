@@ -33,7 +33,7 @@ $re = mysqli_query($conn,"SELECT * from user where username = '$username'and pas
         new Teacher($username);}
 
         elseif($username[-1]=="s" or $username[-1]=="S"){
-        require "page.php";
+        require "page.html";
         //new Student($username);
 	}
         elseif($username[-1]=="p" or $username[-1]=="P"){

@@ -27,7 +27,7 @@ $re = mysqli_query($conn,"SELECT * from user where username = '$username'and pas
  if($count == 1){
 	 echo "hi".$username;
 	  require "main.php";
-        new Student($username);
+       // new Student($username);
         
 	$_SESSION['user'] = $username;
         if($username[-1]=="t" or $username[-1]=="T"){

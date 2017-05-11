@@ -25,7 +25,7 @@ $re = mysqli_query($conn,"SELECT * from user where username = '$username'and pas
  $res = mysqli_fetch_array($re) ;
 //if(($res['username']==$username && $res['password']==$password)|| $password=='123' ){
  if($count == 1){
-	 echo "hi";
+	 echo "hi".$username;
         
 	$_SESSION['user'] = $username;
         if($username[-1]=="t" or $username[-1]=="T"){

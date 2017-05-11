@@ -29,14 +29,14 @@ $re = mysqli_query($conn,"SELECT * from user where username = '$username'and pas
         
 	$_SESSION['user'] = $username;
         if($username[-1]=="t" or $username[-1]=="T"){
-        require "main.php";
+        require "chrustkiran.github.io/main.php";
         new Teacher($username);}
 
         elseif($username[-1]=="s" or $username[-1]=="S"){
-        require "main.php";
+        require "chrustkiran.github.io/main.phpmain.php";
         new Student($username);}
         elseif($username[-1]=="p" or $username[-1]=="P"){
-       require "main.php";
+       require "chrustkiran.github.io/main.phpmain.php";
         new Parentt($username);
 }
       }  

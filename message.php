@@ -3,7 +3,7 @@
  	$conn = mysqli_connect("sql9.freesqldatabase.com","sql9173811","hsR16bldP1","sql9173811") or die($conn);
  	$user = mysqli_real_escape_string($conn,$_SESSION['user']);
  	$db = mysqli_query($conn,"SELECT * from message where reciever = '$user'")or die("can't connect ".mysqli_error($conn));
- 	$arr = mysqli_fetch_array($db);
+ 	
  	if(isset($_POST['send'])){
  	$sen = mysqli_real_escape_string($conn,$_POST["sender"]);
  	$msg = mysqli_real_escape_string($conn,$_POST["message"]);
@@ -22,9 +22,10 @@
  <h1>Your  Messages</h1>
  <p>
  <?php
+	 while($arr = mysqli_fetch_array($db)){
   echo "Sent by: ".$arr['sender']."<br>";
   echo "Messages ".$arr['message'];
-
+	 }
 
 ?>
 

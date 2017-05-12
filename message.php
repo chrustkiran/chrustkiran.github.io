@@ -24,7 +24,7 @@
  <?php
 	 while($arr = mysqli_fetch_array($db)){
   echo "Sent by: ".$arr['sender']."<br>";
-  echo "Messages ".$arr['message'];
+  echo "Messages ".$arr['message']."<br/><br/>";
 	 }
 
 ?>

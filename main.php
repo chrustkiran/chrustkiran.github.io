@@ -100,7 +100,7 @@ size : width:48px;height:48px;}
 <body>
 
 <div class="container">
-  <a href="#home">Home</a>
+  <a href="message.php">Messages</a>
   <a href="#news">Time Table</a>
   <div class="dropdown">
     <button class="dropbtn">Details</button>

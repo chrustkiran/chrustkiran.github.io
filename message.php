@@ -13,7 +13,7 @@
 $main = $_GET['main']
 if($main){
 	require(main.php);
-	new Student($__SESSSION['user']);
+	new Student($_SESSSION['user']);
 
 }
 ?>

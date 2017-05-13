@@ -35,7 +35,7 @@
  	    <label>Who? </label>
  		<input type="text" name="sender"><br/><br/>
  		 <label>Message </label>
- 		<input type="text" name="message"><br/><br/>
+ 		<textarea name = "message"></textarea><br/><br/>
  		<input type="submit" name="send" value="send">
 
 

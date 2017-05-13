@@ -11,7 +11,7 @@
 		
 }
 $main = $_GET['main'];
-if(isset($main)){
+if(isset($main)==1){
 	require(main.php);
 	new Student($_SESSSION['user']);
 
@@ -48,7 +48,7 @@ if(isset($main)){
 
 
  	</form>
-	 <a href="message.php?main=true">Back to main</a>
+	 <a href="message.php?main=1">Back to main</a>
  </p>
 </body>
 </html>

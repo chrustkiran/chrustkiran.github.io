@@ -42,6 +42,7 @@
 
 
  	</form>
+	 <a href="meain.php">Back to main</a>
  </p>
 </body>
 </html>

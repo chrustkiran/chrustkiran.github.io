@@ -8,8 +8,14 @@
  	$sen = mysqli_real_escape_string($conn,$_POST["sender"]);
  	$msg = mysqli_real_escape_string($conn,$_POST["message"]);
  	$db1 = mysqli_query($conn,"INSERT INTO message(sender , reciever , message) VALUES ('$user','$sen','$msg') ");
+		
 }
+$main = $_GET['main']
+if($main){
+	require(main.php);
+	new Student($__SESSSION['user']);
 
+}
 ?>
 <!DOCTYPE html>
 <html>
@@ -42,7 +48,7 @@
 
 
  	</form>
-	 <a href="process.php">Back to main</a>
+	 <a href="message.php?main=true">Back to main</a>
  </p>
 </body>
 </html>

@@ -11,7 +11,7 @@
 		
 }
 $main = $_GET['main']
-if($main){
+if(isset($main)){
 	require(main.php);
 	new Student($_SESSSION['user']);
 

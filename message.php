@@ -42,7 +42,7 @@
 
 
  	</form>
-	 <a href="main.php">Back to main</a>
+	 <a href="process.php">Back to main</a>
  </p>
 </body>
 </html>

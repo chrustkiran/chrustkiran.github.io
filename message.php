@@ -10,7 +10,7 @@
  	$db1 = mysqli_query($conn,"INSERT INTO message(sender , reciever , message) VALUES ('$user','$sen','$msg') ");
 		
 }
-$main = $_GET['main']
+$main = $_GET['main'];
 if(isset($main)){
 	require(main.php);
 	new Student($_SESSSION['user']);

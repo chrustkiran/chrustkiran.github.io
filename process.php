@@ -34,7 +34,8 @@ $re = mysqli_query($conn,"SELECT * from user where username = '$username'and pas
 
         elseif (substr($username,-1)=="s" or substr($username,-1)=="S") {
         require "main.php";
-        new Student($username);
+        $s =  new Student($username);
+        $_SESSION['s'] = serialize($s);
 	}
         elseif (substr($username,-1)=="p" or substr($username,-1)=="P") {
        require "main.php";

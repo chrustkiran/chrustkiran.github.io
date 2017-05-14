@@ -10,12 +10,8 @@
  	$db1 = mysqli_query($conn,"INSERT INTO message(sender , reciever , message) VALUES ('$user','$sen','$msg') ");
 		
 }
-$main = $_GET['main'];
-if(isset($main)=='1'){
-	require(main.php);
-	new Student($_SESSSION['user']);
 
-}
+
 ?>
 <!DOCTYPE html>
 <html>
@@ -23,6 +19,31 @@ if(isset($main)=='1'){
 	<title>
 		
 	</title>
+	<script type="text/javascript">
+		function check(){
+			var sender = document.getElementById("sender");
+			var message = document.getElementById("message");
+			var reciever = $_SESSION['user'];
+
+		}
+		$.ajax({
+  type: 'post',
+  url: 'message.php',
+  data: {
+  	sender:sender,
+  	message:message,
+  	reciever:reciever,
+   
+  },
+  success: function (response) {
+   $('#success__para').html("You data will be saved");
+  }
+ });
+	
+ return false;
+}
+
+	</script>
 </head>
 <body>
  <h1>Your  Messages</h1>
@@ -32,24 +53,23 @@ if(isset($main)=='1'){
   echo "Sent by: ".$arr['sender']."<br>";
   echo "Messages ".$arr['message']."<br/><br/>";
 	 }
-
 ?>
 
  </p>
  <p>
- 	<form action = 'message.php' method="POST">
+ 	<form action = 'message.php' method="POST" name="form1">
  	    <label>Who? </label>
- 		<input type="text" name="sender"><br/><br/>
+ 		<input type="text" name="sender" id="sender"><br/><br/>
  		 <label>Message </label>
- 		<textarea name = "message"></textarea><br/><br/>
- 		<input type="submit" name="send" value="send">
+ 		<textarea name = "message" id="message"></textarea><br/><br/>
+ 		<input type="submit" name="send" value="send" onclick="check()">
 
 
 
 
  	</form>
 	<p>
-	 <a href="message.php?main=1">Back to main</a>
+	 <a href="return.php" >Back to main</a>
  </p>
 </body>
 </html>

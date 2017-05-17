@@ -57,7 +57,7 @@ size : width:48px;height:48px;}
     overflow: hidden;
 }
 
-.dropdown .dropbtn {
+ .dropbtn {
     font-size: 16px;    
     border: none;
     outline: none;

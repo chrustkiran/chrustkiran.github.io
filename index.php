@@ -16,7 +16,7 @@
 			</p>
 			<p>
 				<label>Password:&nbsp</label>
-				<input type="Password " id="pass" name="pass"/>
+				<input type="Password " id="pass" placeholder = "Enter Password" name="pass"/>
 				<input type="hidden" id="user" name="pass1" value="hello" />
 			</p>
 			<p>

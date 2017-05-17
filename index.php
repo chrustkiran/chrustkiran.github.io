@@ -11,12 +11,12 @@
 		
 			<p>
 				<label> Username:  </label>
-				<input type="password" id="user" placeholder="Enter username"    name="user"/>
+				<input type="text" id="user" placeholder="Enter username"    name="user"/>
 				<input type="hidden" id="user" name="user1" value="hello" />
 			</p>
 			<p>
 				<label>Password:&nbsp</label>
-				<input type="password " id="pass" placeholder = "Enter Password" name="pass"/>
+				<input type = "password" id="pass" placeholder = "Enter Password" name = "pass">
 				<input type="hidden" id="user" name="pass1" value="hello" />
 			</p>
 			<p>

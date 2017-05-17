@@ -97,6 +97,7 @@ size : width:48px;height:48px;}
 }
 	#logout{
 		margin : 200px;
+		color : white;
 	
 	}
 </style>

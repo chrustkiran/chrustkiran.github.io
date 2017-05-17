@@ -11,12 +11,12 @@
 		
 			<p>
 				<label> Username:  </label>
-				<input type="text" id="user" name="user"/>
+				<input type="text" id="user" placeholder="Enter username"    name="user"/>
 				<input type="hidden" id="user" name="user1" value="hello" />
 			</p>
 			<p>
 				<label>Password:&nbsp</label>
-				<input type="Password" id="pass" name="pass"/>
+				<input type="Password " id="pass"  placeholder="Enter password" name="pass"/>
 				<input type="hidden" id="user" name="pass1" value="hello" />
 			</p>
 			<p>
@@ -28,6 +28,29 @@
 			
 			</p>
 		
+	</div>
+	<div class="slider" id="slidee">
+		<figure>
+			<div class="slide">
+				<img src="images/image1.png">
+			</div>
+
+			<div class="slide">
+				<img src="images/image2.jpg">
+			</div>
+
+			<div class="slide">
+				<img src="images/image3.jpg">
+			</div>
+
+			<div class="slide">
+				<img src="images/image4.jpg">
+			</div>
+
+			<div class="slide">
+				<img src="images/image5.jpg">
+			</div>
+		</figure>
 	</div>
 
 

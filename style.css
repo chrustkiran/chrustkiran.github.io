@@ -1,22 +1,30 @@
 body{
-	background-image : url("https://www.insbright.com/wp-content/uploads/3205/study-wallpaper-download.jpg");
+	background-image : url("http://wallpaper-gallery.net/images/school-hd-wallpapers/school-hd-wallpapers-18.jpg");
         background-size: 1600px 1000px;
         font-weight : bold;
         font-family : "Comic Sans MS", cursive, sans-serif;
+        background-position: center;
+        top: 18%;
+        background-attachment: fixed;
+
 }
 #frm{
-	//border: solid gray 1px;
+	border: solid gray 1px;
 	width: 20%;
 	border-radius: 5px;
 	margin: 160px 80px;
 	//background: lightblue;
 	padding: 50px;
+	//border: 3px solid #f1f1f1;
+	margin-left: 60px;
+	margin-top: 240px;
 }
 #btn{
 	color: #fff;
 	background: #337ab7;
 	padding: 5px;
 	float:left;
+
     
 }
 #user{
@@ -28,4 +36,114 @@ body{
 	background: brown;
 	padding: 5px;
 	float :right; 
+}
+btn1:hover {
+    opacity: 0.8;
+}
+
+
+.slider{
+	   height: 150px;
+	   overflow: hidden;
+ //  margin-top: -150px;
+//   margin-left: -125px;
+   position: absolute;
+   top: 0%;
+   left: 0%;
+   
+  
+
+	
+}
+
+.slider figure div{
+	width: 20%;
+	float: left;
+}
+
+.slider figure img{
+	width: 100%;
+	float: left;
+}
+
+.slider figure{
+	position: relative;
+	width: 500%;
+	margin: 0;
+	left: 0;
+	animation: 25s slidy infinite;
+}
+
+@keyframes slidy{
+	0%{
+		left: 0%
+	}
+
+	10%{
+		left: 0%;
+	}
+
+	12%{
+		left: -100%;
+	}
+
+	22%{
+		left: -100%;
+	}
+
+	24%{
+		left: -200%;
+	}
+
+	34%{
+		left: -200%;
+	}
+
+	36%{
+		left: -300%;
+	}
+
+	46%{
+		left: -300%;
+	}
+
+	48%{
+		left: -400%;
+	}
+
+	58%{
+		left: -400%;
+	}
+
+	60%{
+		left: -300%;
+	}
+
+	70%{
+		left: -300%;
+	}
+
+	72%{
+		left: -200%;
+	}
+
+	82%{
+		left: -200%;
+	}
+
+	84%{
+		left: -100%;
+	}
+
+	94%{
+		left: -100%;
+	}
+
+	96%{
+		left: 0%;
+	}
+
+	100%{
+		left: 0%;
+	}
 }

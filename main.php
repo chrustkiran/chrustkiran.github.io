@@ -97,7 +97,10 @@ size : width:48px;height:48px;}
 }
 	#logout{
 		position: absolute;
-		margin : 90px 90px;
+		//margin : 90px 90px;
+		float: left;
+                overflow: hidden;
+		color : white;
 	
 	}
 </style>

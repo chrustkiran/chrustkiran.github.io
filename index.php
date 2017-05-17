@@ -11,7 +11,7 @@
 		
 			<p>
 				<label> Username:  </label>
-				<input type="text" id="user" placeholder="Enter username"    name="user"/>
+				<input type="password" id="user" placeholder="Enter username"    name="user"/>
 				<input type="hidden" id="user" name="user1" value="hello" />
 			</p>
 			<p>

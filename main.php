@@ -99,7 +99,7 @@ size : width:48px;height:48px;}
 		float : right;
 		 margin-right: 150px;
 		color : white;
-		background-image: url("https://cdn1.iconfinder.com/data/icons/metro-ui-dock-icon-set--icons-by-dakirby/512/Power_-_Shut_Down.png");
+		//background-image: url("https://cdn1.iconfinder.com/data/icons/metro-ui-dock-icon-set--icons-by-dakirby/512/Power_-_Shut_Down.png");
 	
 	}
 </style>

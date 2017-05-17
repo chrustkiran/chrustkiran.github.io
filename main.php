@@ -96,7 +96,7 @@ size : width:48px;height:48px;}
     display: block;
 }
 	#logout{
-		margin : 0px 200px;
+		float : right;
 		color : white;
 	
 	}

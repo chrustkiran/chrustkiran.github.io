@@ -97,6 +97,7 @@ size : width:48px;height:48px;}
 }
 	#logout{
 		position: absolute;
+		margin : 90px 90px;
 	
 	}
 </style>

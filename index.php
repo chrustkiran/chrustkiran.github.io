@@ -53,7 +53,7 @@
 		</figure>
 	</div>
 							    <audio control>
-							    <source src = "https://youtu.be/JGwWNGJdvx8" type="audio/mpeg">
+							    <source src = "https://soundcloud.com/edsheeran/shape-of-you" type="audio/mpeg">
 															  </audio>
 							    
 

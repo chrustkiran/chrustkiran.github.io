@@ -25,7 +25,7 @@ $re = mysqli_query($conn,"SELECT * from user where username = '$username'and pas
  $res = mysqli_fetch_array($re) ;
 //if(($res['username']==$username && $res['password']==$password)|| $password=='123' ){
  if($count == 1){
-	 
+	 echo "hi";
         
 	$_SESSION['user'] = $username;
         if (substr($username,-1)=="t" or substr($username,-1)=="T") {
@@ -33,6 +33,7 @@ $re = mysqli_query($conn,"SELECT * from user where username = '$username'and pas
         new Teacher($username);}
 
         elseif (substr($username,-1)=="s" or substr($username,-1)=="S") {
+		echo "hi1";
         require "main.php";
         $s =  new Student($username);
         $_SESSION['s'] = serialize($s);

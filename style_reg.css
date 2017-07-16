@@ -1,0 +1,35 @@
+body{
+ 
+ background-size: 1600px 1000px;
+font-weight : bold;
+font-family : "Comic Sans MS", cursive, sans-serif;
+}
+img{
+	margin: 0px 80px;
+}
+#frm1{
+
+	//border-style: solid;
+	width: 20%;
+	border-radius: 5px;
+	margin: 20px 780px;
+	width: 300px;
+	padding: 100px;
+
+}
+input{
+float : right;
+
+}
+input{
+	color:#2eada4;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    border-radius: 50px; 
+    border-color: #2eada4;
+	
+	
+	padding: 5px;
+}
+#dp{
+	width: 80tpx;
+}

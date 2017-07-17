@@ -18,7 +18,7 @@ while($rowq = mysqli_fetch_array($re)){
 		break;
 	}
 	else{
-		$boo = 1;
+		$boo = 1;               //user available
 	}
 }
 

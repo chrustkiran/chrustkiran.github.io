@@ -10,7 +10,7 @@ session_start();
  
  $year = date('Y');
  for ($i=01; $i < cal_days_in_month(CAL_GREGORIAN, $date1, $year)+1;  $i++) { 
- 	# code...
+ 	# code..
  	if(strlen($i)==1){
   $datee = $year."-".$date1."-0".$i;
  

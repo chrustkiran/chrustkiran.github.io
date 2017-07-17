@@ -16,11 +16,11 @@ $conn = $connection -> conn();
 $u=mysqli_real_escape_string($conn,$_POST['username']);
 $cla=mysqli_real_escape_string($conn,$_POST['class']);
 $clu=mysqli_real_escape_string($conn,$_POST['club']);
-$p=mysqli_real_escape_string($conn,(string)($_POST['password']));
+$p=mysqli_real_escape_string($conn,(string)($_POST['password'])); 
 
 $re = mysqli_query($conn,"SELECT * from user");
 while($rowq = mysqli_fetch_array($re)){
-	if($rowq['username'] == $u){
+	if($rowq['username'] == $u){                //usrname already exists
 		$boo = 0;
 		break;
 	}

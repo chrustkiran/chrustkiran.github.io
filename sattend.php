@@ -2,7 +2,7 @@
  include_once('student.php');
 include_once('main.php');
 session_start();
- $connection = new Connection();
+ $connection = new Connection();//connection
  $conn = $connection -> conn();
  $id = $_SESSION['id'];
  $db = mysqli_query($conn , "SELECT * from user where username = '$id'");

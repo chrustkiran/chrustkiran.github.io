@@ -13,7 +13,8 @@
 			<p>
 				<label> Username:  </label>
 				<input type="text" id="user" name="user"/>
-				<!--<input type="hidden" id="user" name="user1" value="hello" />-->
+				<!--<input type="hidden" id="user" name="user1" value="hello" />vngvfhghgchgc-->
+
 			</p>
 			<p>
 				<label>Password:&nbsp</label>
